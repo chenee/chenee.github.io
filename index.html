@@ -1,3 +1,362 @@
-<html>
-  <h1>Hello github pages</h1>
-</html>
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#"><head>
+      <title>Noisli - Improve Focus and Boost Productivity with Background Noise</title>
+
+      <link async="async" href="./css/application.css" media="all" rel="stylesheet" type="text/css">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="user-scalable=no, width=device-width, minimum-scale=1, maximum-scale=1">
+   </head>
+
+   <body style="background-color: rgb(114, 192, 175);" class=" filereader filesaver">
+
+      <div class="logged_in" id="logged_in" style="">
+
+         <div class="noisli-header-div">
+            <h1 class="noisli-header"><a class="home-link" href="javascript:;">Noisli</a></h1>
+            <ul class="mute-header">
+               <li>
+                  <div data-element="volume_slide" id="all-sounds-volume" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="opacity: 0; cursor: default;">
+                    <span class="ui-slider-handl  ui-state-default ui-corner-all" id="all-sounds-volume-value" tabindex="0" style="left: 100%;"></span>
+                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%; cursor: default;"></span>
+                   </div>
+               </li>
+               <li><img alt="Mute" id="sound-button" src="./assets/unmute-1714b3612192c66a080e82f0f99f4d3f.png" style="opacity:0.5; filter:alpha(opacity=50);" title="Mute"></li>
+               <li><img alt="Unmute" id="unmute-button" src="./assets/mute-f9ebbc14e938a2984a0278a2540bf7e3.png" style="display:none;" title="Unmute"></li>
+               <p class="right unactive" id="text-editor-eye-p" style="display: none;">
+                  <img alt="Preview Markdown" id="text-editor-eye-inactive" src="./assets/preview-active-09757e17e9774e16a98d04d6d5bcff84.png" style="opacity:0.5; filter:alpha(opacity=50);" title="Preview Markdown">
+                  <img alt="Preview Markdown" id="text-editor-eye-active" src="./assets/preview-active-09757e17e9774e16a98d04d6d5bcff84.png" style="display:none;" title="Preview Markdown">
+               </p>
+               <img alt="Save text" id="text-editor-save-inactive" src="./assets/download-active-30c07fd7d9b378146d43d6fced601d98.png" style="display:none; opacity:0.5; filter:alpha(opacity=50);" title="Save text">
+               <img alt="Save text" id="text-editor-save-active" src="./assets/download-active-30c07fd7d9b378146d43d6fced601d98.png" style="display:none;" title="Save text">
+            </ul>
+         </div>
+
+         <div class="noisli-header-mobile-div">
+            <div class="col-xs-12 text-center">
+               <h1 class="noisli-mobile">Noisli</h1>
+            </div>
+         </div>
+
+         <div class="noisli-sticky-header-div" data-element="noisli-sticky-header" style="display: none; background-color: rgb(114, 192, 175);">
+
+           <h1 class="noisli-sticky-header"> <a class="home-link" href="javascript:;">Noisli</a></h1>
+
+            <div class="menu-sticky-header-div">
+               <ul class="menu-sticky-header-ul">
+                  <li><span class="menu-dashboard-span" id="menu-sticky-header-span-save" style="display: inline-block;">Save</span></li>
+                  <li><span class="menu-dashboard-span" id="menu-sticky-header-span-share" style="display: inline-block;">Share</span></li>
+                  <li>
+                     <span class="menu-dashboard-span-nonactive" id="menu-sticky-header-span-favorite" style="display: none; background-color: rgba(255, 255, 255, 0.0980392);">Favorites</span>
+                     <input class="save-combo-on-home-page" id="save-combo-on-sticker" style="display:none;" autocomplete="off">
+                  </li>
+                  <li><span class="menu-dashboard-span" id="menu-sticky-header-span-timer">Set Timer</span></li>
+               </ul>
+            </div>
+            <ul class="mute-sticky-header">
+               <!-- <li><img id="master-volume-slider" src="img/slider.png"></li> -->
+               <li data-element="mute-clickpad">
+                  <div data-element="volume_sli" id="all-sounds-volume-sticky" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="display: none; cursor: default;">
+                    <span class="ui-slider-handl  ui-state-default ui-corner-all" id="all-sounds-volume-value-sticky" tabindex="0" style="left: 75%;"></span>
+                    <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%; cursor: default;"></span>
+                   </div>
+               </li>
+               <li>
+                  <img alt="Mute" id="sound-button-sticky" src="./assets/unmute-1714b3612192c66a080e82f0f99f4d3f.png" style="opacity:0.5; filter:alpha(opacity=50);" title="Mute">
+               </li>
+               <li>
+                  <img alt="Unmute" id="unmute-button-sticky" src="./assets/mute-f9ebbc14e938a2984a0278a2540bf7e3.png" style="display:none;" title="Unmute">
+               </li>
+            </ul>
+         </div>
+         <div class="noisli-menu-l-div">
+            <ul class="noisli-menu-l-ul">
+               <div hidden="">
+                  <img alt="Share" src="./assets/share-5b4839c054ca3e0a6ab8e4b633a43730.png">
+                  <img alt="Combo-menu" src="./assets/combo-menu-e14f576a7ad79f42dd59390ef733edc5.png">
+               </div>
+               <li id="menu-account"><img alt="Account" id="menu-account-img" src="./assets/account-79e6b452480ae3fc27064c2415d69834.png" title="Settings"></li>
+               <li id="menu-combo"><img alt="Combo" id="menu-combo-img" src="./assets/combo-04681d7b1d123a44d38c94def65f8462.png" title="Favorite Combos"><span id="saved-home-show" style="display:none;">Saved</span></li>
+               <li id="menu-timer"><img alt="Timer" id="menu-timer-img" src="./assets/timer-6905610793f7b74cbc5f742bd628e113.png" title="Timer"></li>
+               <li id="menu-texteditor"><img alt="Text-editor" id="menu-texteditor-img" src="./assets/text-editor-b3360a68a7e899d580d6fa3409a090be.png" title="Text editor"></li>
+            </ul>
+         </div>
+
+         <div class="container" data-element="main" id="main-module">
+            <div class="row mobile-favorites">
+               <div class="col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-md-8 col-sm-12 col-xs-12 text-center">
+                  <ul class="menu-dashboard-ul">
+                     <span class="menu-dashboard-span-nonactive button-clicked" id="mobile-show-favorites">Favorites</span>
+                  </ul>
+                  <ul class="menu-mobile-favorites-ul" style="">
+                     <li><span class="mobile-favorites-span" id="mobile-favorite-span-0">Favorites</span></li>
+                     <li><span class="mobile-favorites-span" id="mobile-favorite-span-1">Favorites</span></li>
+                     <li><span class="mobile-favorites-span" id="mobile-favorite-span-2">Favorites</span></li>
+                     <li><span class="mobile-favorites-span" id="mobile-favorite-span-3">Favorites</span></li>
+                     <li><span class="mobile-favorites-span" id="mobile-favorite-span-4">Favorites</span></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 hidden-sm hidden-xs"></div>
+            </div>
+            <div class="row" id="menu-dashboard-div">
+               <div class="hidden-lg col-md-2 col-sm-1 hidden-xs"> </div>
+               <div class="col-lg-12 col-md-8 col-sm-10 col-xs-12 text-center" style="margin-left: 0px !important; margin-right: 0px !important;">
+                  <ul class="menu-dashboard-ul">
+                     <span class="menu-dashboard-span" id="menu-dashboard-span-save" style="display: inline-block;">Save</span>
+                     <span class="menu-dashboard-span" id="menu-dashboard-span-share" style="display: inline-block;">Share</span>
+                     <input class="save-combo-on-home-page" id="save-combo-on-home-page" style="display:none;" autocomplete="off">
+                     <span class="menu-dashboard-span-nonactive" id="menu-dashboard-span-combo" style="display: none; background-color: rgba(255, 255, 255, 0.0980392);">Favorites</span>
+                     <span class="menu-dashboard-span" id="set-timer-span">Set Timer</span>
+                  </ul>
+               </div>
+               <div class="hidden-lg col-md-2 col-sm-1 hidden-xs"></div>
+            </div>
+            <div class="row" id="presets-dashboard-div">
+               <div class="col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-md-8 col-sm-8 col-xs-12 text-center">
+                  <ul class="presets-dashboard-ul">
+                     <li><span class="presets-span" id="random-button">Random</span></li>
+                     <li><span class="presets-span" id="productivity-button">Productivity</span></li>
+                     <li><span class="presets-span" id="relax-button">Relax</span></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Rain" class="sound sound-left" data-element="sound" data-name="rain" src="./assets/rain-9803d4c7c81e30d30f048b266281d60b.png" title="Rain" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="rain_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hiddne-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Thunderstorm" class="sound sound-right" data-element="sound" data-name="thunderstorm" src="./assets/thunderstorm-e4d137c115f626f6c2caf0c378b2c927.png" title="Thunderstorm" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="thunderstorm_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Wind" class="sound sound-left" data-element="sound" data-name="wind" src="./assets/wind-5bfcf33faaab320c6ebaae5ff4c8cdbd.png" title="Wind" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="wind_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Forest" class="sound sound-right" data-element="sound" data-name="forest" src="./assets/forest-d6c11662d8931c5d494ada936e7c3df5.png" title="Forest" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="forest_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Leaves" class="sound sound-left" data-element="sound" data-name="leaves" src="./assets/leaves-d8154f4a276e4b17bd2b5ad89d661ee4.png" title="Leaves" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="leaves_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Waterstream" class="sound sound-right" data-element="sound" data-name="waterstream" src="./assets/waterstream-062a443a13f5484f49e46b604a942057.png" title="Water stream" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="waterstream_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Seaside" class="sound sound-left" data-element="sound" data-name="seaside" src="./assets/seaside-cdf1a934dffab7ef19f336cb431452df.png" title="Seaside" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="seaside_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Water" class="sound sound-right" data-element="sound" data-name="water" src="./assets/water-147e604d6a5d0e2b5c952ac117b135c3.png" title="Water" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="water_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Fire" class="sound sound-left" data-element="sound" data-name="fire" src="./assets/fire-e77cc14123c2e330b9ec77cd572939e5.png" title="Fireplace" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="fire_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Summernight" class="sound sound-right" data-element="sound" data-name="summernight" src="./assets/summernight-2cc6dacdacfed1109f50eab4686334bd.png" title="Summer night" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="summernight_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Coffee" class="sound sound-left" data-element="sound" data-name="coffee" src="./assets/coffee-694ca06b5cf887557c4ca51b85a77059.png" title="Coffee shop" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="coffee_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Train" class="sound sound-right" data-element="sound" data-name="train" src="./assets/train-ef5005184278564125d92ae226ff4a07.png" title="Train" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="train_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Fan" class="sound sound-left" data-element="sound" data-name="fan" src="./assets/fan-bc5b15df194569b2e7da666c77cc1ab9.png" title="Fan" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="fan_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 75%;"></span>
+                   </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Whitenoise" class="sound sound-right" data-element="sound" data-name="whitenoise" src="./assets/whitenoise-da6534d709bd33cae4cba4ab98d1ba6f.png" title="White noise" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="whitenoise_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 20%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+            <div class="row" id="players">
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Pinknoise" class="sound sound-left" data-element="sound" data-name="pinknoise" src="./assets/pinknoise-ef192bcee222a654ac0226a1fbbfdd0e.png" title="Pink noise" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="pinknoise_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 20%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 text-center">
+                  <img alt="Brownnoise" class="sound sound-right" data-element="sound" data-name="brownnoise" src="./assets/brownnoise-af1c56e58b9b9009187bb23b4e4f1668.png" title="Brown noise" style="opacity: 0.5;">
+                  <div class="to-left ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-element="volume_slider" data-element-name="brownnoise_slider" style="display: none;">
+                     <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 20%;"></span>
+               </div>
+               </div>
+               <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs"></div>
+            </div>
+         </div>
+         <div data-element="audio_players"></div>
+         
+         
+         
+         
+         
+         
+         
+         <div class="footer-logo-welcome" data-element="footer-logo-welcome" id="desktop-footer" style="z-index: 3000; display: block; background-color: rgb(114, 192, 175);">
+            <div class="container">
+               <div class="row" id="footer-logo-welcome-div">
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-1 text-center"></div>
+                  <div class="col-lg-2 col-md-2 col-sm-12 col-xs-10" id="footer-logo-welcome-noisli">
+                     <a href="http://www.noisli.com">Noisli</a>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-1 text-center"></div>
+                  <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="footer-logo-welcome-menu">
+                     <ul style="margin-bottom: 0px">
+                        <li><a target="_blank" href="/about">About</a></li>
+                        <li><a target="_blank" href="/apps">Apps</a></li>
+                        <li><a target="_blank" href="https://angel.co/noisli/jobs">Jobs</a></li>
+                        <li><a target="_blank" href="http://blog.noisli.com">Blog</a></li>
+                        <li><a target="_blank" href="/features">Features</a></li>
+                        <li><a target="_blank" href="/terms">Terms &amp; Privacy</a></li>
+                        <li>
+                            <a target="_blank" href="mailto:hello@noisli.com">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-logo-welcome" data-element="footer-logo-welcome" id="mobile-footer" style="z-index: 3000; background-color: rgb(114, 192, 175);">
+            <div class="container">
+               <div class="row" id="footer-logo-welcome-div">
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-1 text-center"></div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-10" id="footer-logo-welcome-noisli">
+                     <p><a href="http://www.noisli.com">Noisli</a></p>
+                  </div>
+                  <div class="hidden-lg hidden-md hidden-sm col-xs-1 text-center"></div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" id="footer-logo-welcome-menu">
+                     <p class="footer-mobile-p">
+                        <a id="footer-link-a" target="_blank" href="/about">About</a>
+                        <a id="footer-link-b" target="_blank" href="/features">Features</a>
+                     </p>
+                     <p class="footer-mobile-p">
+                        <a id="footer-link-c" target="_blank" href="https://angel.co/noisli/jobs">Jobs</a>
+                        <a id="footer-link-d" target="_blank" href="/terms">Terms &amp; Privacy</a>
+                     </p>
+                     <p class="footer-mobile-p" style="margin-bottom: 50px;">
+                        <a id="footer-link-e" target="_blank" href="http://blog.noisli.com">Blog</a>
+                        <a id="footer-link-f" target="_blank" href="mailto:hello@noisli.com">Contact</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <script type="text/javascript">
+         //<![CDATA[
+         window.gon = {};gon.sounds=null;
+         //]]>
+      </script>
+      <script src="./js/app.js" type="text/javascript"></script>
+
+      <script>
+         var _gaq = _gaq || [];
+         _gaq.push(['_setAccount', 'UA-44138361-1']);
+         _gaq.push(['_trackPageview']);
+
+         var signedIn;
+         var comboLink;
+
+         $(document).ready(function () {
+           $.cookie.raw = true
+           addSliderListeners();
+           addSliderListenersOut();
+           addSliderListenersSticky();
+
+           //save if the user is logged in
+           signedIn = 'true';
+           //save if the user accessing Noisli using a combo link
+           comboLink = false;
+
+
+          $(document).scroll(function() {
+              var y = $(this).scrollTop();
+              if (y > 200) {
+                  $(".noisli-sticky-header-div").show()
+              } else {
+                  $(".noisli-sticky-header-div").hide()
+              }
+          });
+
+         });
+      </script>
+
+
+</body></html>

@@ -1,0 +1,41 @@
+{
+    "success": true, 
+    "sound_links": {
+        "ogg": {
+            "rain": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/rain.ogg", 
+            "thunderstorm": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/thunderstorm.ogg", 
+            "wind": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/wind.ogg", 
+            "forest": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/forest.ogg", 
+            "leaves": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/leaves.ogg", 
+            "waterstream": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/waterstream.ogg", 
+            "seaside": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/seaside.ogg", 
+            "water": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/water.ogg", 
+            "fire": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/fire.ogg", 
+            "summernight": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/summernight.ogg", 
+            "coffee": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/coffee.ogg", 
+            "train": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/train.ogg", 
+            "fan": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/fan.ogg", 
+            "whitenoise": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/whitenoise.ogg", 
+            "pinknoise": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/pinknoise.ogg", 
+            "brownnoise": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/brownnoise.ogg"
+        }, 
+        "mp3": {
+            "rain": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/rain.ogg", 
+            "thunderstorm": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/thunderstorm.ogg", 
+            "wind": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/wind.ogg", 
+            "forest": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/forest.ogg", 
+            "leaves": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/leaves.ogg", 
+            "waterstream": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/waterstream.ogg", 
+            "seaside": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/seaside.ogg", 
+            "water": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/water.ogg", 
+            "fire": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/fire.ogg", 
+            "summernight": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/summernight.ogg", 
+            "coffee": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/coffee.ogg", 
+            "train": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/train.ogg", 
+            "fan": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/fan.ogg", 
+            "whitenoise": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/whitenoise.ogg", 
+            "pinknoise": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/pinknoise.ogg", 
+            "brownnoise": "http://7xl21j.com2.z0.glb.qiniucdn.com/productivity/sound/brownnoise.ogg"
+        }
+    }
+}
